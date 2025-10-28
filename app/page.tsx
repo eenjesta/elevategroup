@@ -304,6 +304,7 @@ export default function Home() {
           border-radius: 4px;
           transition: all 0.4s ease;
           position: relative;
+          overflow: hidden;
         }
 
         .feature-item::before {
