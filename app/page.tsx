@@ -611,7 +611,7 @@ export default function Home() {
 
       <header>
         <nav>
-          <div className="logo">🚀 ELEVATE GROUP</div>
+          <div className="logo"><img src={'/logo_elevate_group.png'} width={96} /></div>
           <button
             className={`hamburger ${isMenuOpen ? 'active' : ''}`}
             onClick={toggleMenu}
@@ -721,7 +721,7 @@ export default function Home() {
       <section className="cta-section">
         <h2>Klaar om te groeien?</h2>
         <p>Neem vandaag nog contact op voor een gratis adviesgesprek</p>
-        <button className="btn btn-primary">Bel ons: +31 (0)20 XXX XXXX</button>
+        <button className="btn btn-primary">Gratis Adviesgesprek Inplannen</button>
       </section>
 
       <section className="features" id="contact">
