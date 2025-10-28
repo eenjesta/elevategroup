@@ -654,7 +654,7 @@ export default function Home() {
             <div className="service-card">
               <div className="service-icon">💼</div>
               <h3>Sales Support</h3>
-              <p>Van prospectie tot afsluiting: we ondersteunen je salesteam met proven tactiek en training. Verhoog je conversie en omzetstijging met professioneel sales support.</p>
+              <p>Van prospectie tot afsluiting: we ondersteunen je salesteam met proven tactiek en training. Verhoog je conversie en omzet met professioneel sales support.</p>
             </div>
             <div className="service-card">
               <div className="service-icon">⚙️</div>
@@ -672,7 +672,7 @@ export default function Home() {
           <div className="feature-grid">
             <div className="feature-item">
               <h4>✓ Data-Driven Approach</h4>
-              <p>Alle strategieën gebaseerd op hard data en marktanalyse voor maximale resultaten.</p>
+              <p>Alle strategieën gebaseerd op data en marktanalyse voor maximale resultaten.</p>
             </div>
             <div className="feature-item">
               <h4>✓ Ervaren Team</h4>
