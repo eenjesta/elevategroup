@@ -530,7 +530,7 @@ export default function Home() {
         }
 
         .hamburger.active span:nth-child(1) {
-          transform: rotate(45deg) translate(8px, 8px);
+          transform: rotate(45deg) translate(0px, 10px);
         }
 
         .hamburger.active span:nth-child(2) {
@@ -538,7 +538,7 @@ export default function Home() {
         }
 
         .hamburger.active span:nth-child(3) {
-          transform: rotate(-45deg) translate(7px, -7px);
+          transform: rotate(-45deg) translate(0px, -10px);
         }
 
         @media (max-width: 768px) {
@@ -634,8 +634,8 @@ export default function Home() {
           <h1>Groei Jouw Business Met Elevate Group</h1>
           <p>Wij leveren kwaliteitsleads, sluiten deals en digitaliseren jouw bedrijf voor maximale groei</p>
           <div className="cta-buttons">
-            <button className="btn btn-primary">Gratis Adviesgesprek</button>
-            <button className="btn btn-secondary">Lees meer</button>
+            <a href="https://calendly.com/elevategroupnl/adviesgesprek" className="btn btn-primary">Gratis Adviesgesprek</a>
+            <a href='#services' className="btn btn-secondary">Lees meer</a>
           </div>
         </div>
       </section>
@@ -675,7 +675,7 @@ export default function Home() {
             </div>
             <div className="feature-item">
               <h4>✓ Ervaren Team</h4>
-              <p>15+ jaar expertise in leadgeneratie, sales en business digitalisering.</p>
+              <p>5+ jaar expertise in leadgeneratie, sales en business digitalisering.</p>
             </div>
             <div className="feature-item">
               <h4>✓ Snelle Implementatie</h4>
@@ -697,72 +697,32 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="stats">
-        <div className="stats-container">
-          <div className="stat-box">
-            <div className="stat-number">500+</div>
-            <div className="stat-label">Leads Per Maand</div>
-          </div>
-          <div className="stat-box">
-            <div className="stat-number">85%</div>
-            <div className="stat-label">Conversie Rate</div>
-          </div>
-          <div className="stat-box">
-            <div className="stat-number">150+</div>
-            <div className="stat-label">Tevreden Klanten</div>
-          </div>
-          <div className="stat-box">
-            <div className="stat-number">€2M+</div>
-            <div className="stat-label">Omzet Gegenereerd</div>
-          </div>
-        </div>
-      </section>
-
       <section className="cta-section">
         <h2>Klaar om te groeien?</h2>
         <p>Neem vandaag nog contact op voor een gratis adviesgesprek</p>
-        <button className="btn btn-primary">Gratis Adviesgesprek Inplannen</button>
-      </section>
-
-      <section className="features" id="contact">
-        <div className="features-container">
-          <h2 className="section-title">Begin Vandaag</h2>
-          <p className="section-subtitle">Neem contact op voor een gratis adviesgesprek</p>
-          <div className="contact-form">
-            <form onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label htmlFor="name">Bedrijfsnaam</label>
-                <input type="text" id="name" name="name" required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="phone">Telefoonnummer</label>
-                <input type="tel" id="phone" name="phone" required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="interest">Waar ben je geïnteresseerd in?</label>
-                <input type="text" id="interest" name="interest" placeholder="bijv. Leads, Sales, CRM" required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Beschrijf jouw vraag</label>
-                <textarea id="message" name="message" required></textarea>
-              </div>
-              <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Verzend</button>
-            </form>
-          </div>
-        </div>
+        <a href='https://calendly.com/elevategroupnl/adviesgesprek' className="btn btn-primary">Gratis Adviesgesprek Inplannen</a>
       </section>
 
       <footer>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', textAlign: 'left', marginBottom: '2rem', maxWidth: '1200px', margin: '0 auto 2rem' }}>
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '2rem',
+            textAlign: 'left',
+            marginBottom: '2rem',
+            maxWidth: '1200px',
+            margin: '0 auto 2rem',
+          }}
+        >
           <div className="footer-section">
             <h4>ELEVATE GROUP</h4>
             <p>Leads • Sales • Digitalisering</p>
-            <p style={{ fontSize: '0.9rem', marginTop: '1rem', opacity: 0.7 }}>Wij transformeren bedrijven met data-driven strategieën.</p>
+            <p style={{ fontSize: '0.9rem', marginTop: '1rem', opacity: 0.7 }}>
+              Wij transformeren bedrijven met data-driven strategieën.
+            </p>
           </div>
+
           <div className="footer-section">
             <h4>Services</h4>
             <ul>
@@ -771,19 +731,44 @@ export default function Home() {
               <li><a href="#services">CRM & Automatisering</a></li>
             </ul>
           </div>
+
           <div className="footer-section">
-            <h4>Contact</h4>
-            <ul>
-              <li><a href="mailto:info@elevategroup.nl">info@elevategroup.nl</a></li>
-              <li><a href="tel:+31201234567">+31 (0)20 123 4567</a></li>
-              <li>Amsterdam, Nederland</li>
-            </ul>
+            <h4 id="contact">Contact</h4>
+
+            {/* Instagram-link met logo */}
+            <div style={{ marginTop: '1rem' }}>
+              <a
+                href="https://www.instagram.com/elevategroup" // ← vervang met jouw echte link
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  textDecoration: 'none',
+                  color: '#1a1a1a',
+                  fontSize: '0.9rem',
+                  fontWeight: 500,
+                }}
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                  alt="Instagram"
+                  width="18"
+                  height="18"
+                  style={{ filter: 'invert(0.3)' }}
+                />
+                Stuur ons een bericht op Instagram
+              </a>
+            </div>
           </div>
         </div>
+
         <div className="footer-bottom">
           <p>&copy; 2025 Elevate Group. Alle rechten voorbehouden.</p>
         </div>
       </footer>
+
     </>
   );
 }
