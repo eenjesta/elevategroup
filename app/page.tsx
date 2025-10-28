@@ -649,7 +649,7 @@ export default function Home() {
             <div className="service-card">
               <div className="service-icon">📊</div>
               <h3>Lead Generation</h3>
-              <p>Wij genereren gekwalificeerde leads via gegevengestuurde strategieën. Onze specialisten identificeren exact jouw doelgroep en leveren leads die converteren.</p>
+              <p>Wij genereren gekwalificeerde leads via data-gedreven strategieën. Onze specialisten identificeren exact jouw doelgroep en leveren leads die converteren.</p>
             </div>
             <div className="service-card">
               <div className="service-icon">💼</div>
